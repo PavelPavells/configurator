@@ -1,0 +1,40 @@
+{
+    "_method_main"   : { 
+        "type"  :   "POST",
+        "name"  :   "/main",
+        
+        "request_body"  : {    
+            "app-id"        :   "application UUID - REQUIRED"
+        },
+    
+        "response" : {    
+            "result"    : {
+                "code"      :   "INTEGER result_code, equals or more then 0 - success, otherwise - fail",
+                "message"   :   "result message"     
+            },
+            "page_view" : {
+                "caption"   :   "Мастер подбора конфигурации оборудования",
+                "device_buttons" : [
+                    {
+                        "name"      : "barrier_button",
+                        "caption"   : "Шлагбаумы\nдля парковок и стоянок",
+                        "image"     : "http://backend/images/barrier_main.png"
+                    },
+                    {
+                        "name"      : "turnstile_button",                    
+                        "caption"   : "Турникеты\nдля контроля доступа",
+                        "image"     : "http://backend/images/turnstile_main.png"                                            
+                    }                    
+                ]
+            }            
+        },
+    
+        "_result-codes" : {
+            "HTTP ERROR"    : "200",
+            "0"     :   "No errors",
+            "1"     :   "Critial error",
+        
+            "OTHER HTTP ERRORS" :   "4xx, 5xx"
+        }
+    },
+}
