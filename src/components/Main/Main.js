@@ -9,7 +9,7 @@ class Main extends Component {
     }
     async componentDidMount() {
         try {
-            const response = await axios.post("http://localhost:9999/api/dw/main")
+            const response = await axios.get("http://localhost:9999/api/dw/main")
                         .then(response => response.json())
                     .then(() => {
                 console.log(response);

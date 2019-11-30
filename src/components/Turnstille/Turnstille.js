@@ -8,7 +8,7 @@ class Turnstille extends Component {
     }
     async componentDidMount() {
         try {
-            const response = await axios.get("http://localhost:9999/api/dw/main")
+            const response = await axios.get("http://localhost:9999/api/dw/turnstile")
                         .then(response => response.json())
                     .then(() => {
                 console.log(response);
@@ -92,7 +92,98 @@ class Turnstille extends Component {
             {/**                     RIGHT BLOCK                        */}
 
                     <div className="wrapper-right-block__turnstille">
-                        BLOCK RIGHT
+                        <div className="right-block__top">
+                            <div className="right-block__top-description">
+                                <div className="description-model">Модель</div>
+                                <div className="description-price">42 150 руб</div>
+                            </div>
+                            <div className="right-block__bottom-description">
+                                <div className="description-model">STR-02SNQE</div>
+                                <div className="description-button">Скачать описание</div>
+                            </div>
+                        </div>
+                        <div className="right-block__bottom">
+                            <div className="wrapper-select">
+                                <div className="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="header-checkbox"/>
+                                    <label className="onoffswitch-label" htmlFor="header-checkbox">
+                                        <span className="onoffswitch-inner"></span>
+                                        <span className="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">Универсальный сетевой контроллер EP-2000</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch2">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch2-checkbox" id="header2-checkbox"/>
+                                    <label className="onoffswitch2-label" htmlFor="header2-checkbox">
+                                        <span className="onoffswitch2-inner"></span>
+                                        <span className="onoffswitch2-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">RFID идентификаторы EMMarin 125 kHz</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch3">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch3-checkbox" id="header3-checkbox"/>
+                                    <label className="onoffswitch3-label" htmlFor="header3-checkbox">
+                                        <span className="onoffswitch3-inner"></span>
+                                        <span className="onoffswitch3-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">RFID идентификаторы Mifare 13,56 MHz</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch4">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch4-checkbox" id="header4-checkbox"/>
+                                    <label className="onoffswitch4-label" htmlFor="header4-checkbox">
+                                        <span className="onoffswitch4-inner"></span>
+                                        <span className="onoffswitch4-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">Биометрическая идентификация по отпечаткам пальцев</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch5">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch5-checkbox" id="header5-checkbox"/>
+                                    <label className="onoffswitch5-label" htmlFor="header5-checkbox">
+                                        <span className="onoffswitch5-inner"></span>
+                                        <span className="onoffswitch5-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">Информационный дисплей учета рабочего времени</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch6">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch6-checkbox" id="header6-checkbox"/>
+                                    <label className="onoffswitch6-label" htmlFor="header6-checkbox">
+                                        <span className="onoffswitch6-inner"></span>
+                                        <span className="onoffswitch6-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">Контроль разовых посещений 2D штрих-коды</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch7">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch7-checkbox" id="header7-checkbox"/>
+                                    <label className="onoffswitch7-label" htmlFor="header7-checkbox">
+                                        <span className="onoffswitch7-inner"></span>
+                                        <span className="onoffswitch7-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">Гостевой доступ по 2D штрих-кодам</div>
+                            </div>
+                            <div className="wrapper-select">
+                                <div className="onoffswitch8">
+                                    <input type="checkbox" name="onoffswitch" className="onoffswitch8-checkbox" id="header8-checkbox"/>
+                                    <label className="onoffswitch8-label" htmlFor="header8-checkbox">
+                                        <span className="onoffswitch8-inner"></span>
+                                        <span className="onoffswitch8-switch"></span>
+                                    </label>
+                                </div>
+                                <div className="right-block__select-description">Корпус кожуха из нержавеющей стали</div>    
+                            </div>
+                        </div>
                     </div>
 
                 </div>
